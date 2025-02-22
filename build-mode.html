@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билд мод - Wall Plast Wiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="build-mode.html">Билд мод</a></li>
+        <li><a href="items.html">Предметы</a></li>
+        <li><a href="skins.html">Скины</a></li>
+        <li><a href="versions.html">Версии</a></li>
+        <li><a href="maps.html">Карты</a></li>
+    </ul>
+</nav>
+    <main>
+        <h1>Билд мод</h1>
+        <div class="content">
+            <div class="toc">
+                <h2>Содержание</h2>
+                <ol>
+                    <li><a href="#build-mode">Режим стройки</a></li>
+                    <li><a href="#menu-controls">Управление меню</a>
+                        <ol>
+                            <li><a href="#additional-menu">Дополнительные функции меню</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#inventory">Инвентарь</a></li>
+                    <li><a href="#text-block">Гайд по блоку текста</a></li>
+                </ol>
+            </div>
+
+            <section id="build-mode">
+                <h2>Режим стройки</h2>
+                <p>Режим стройки был добавлен в версии 0.7.5.2 после добавления стал часто обновляться.</p>
+            </section>
+
+            <section id="menu-controls">
+                <h2>Управление меню</h2>
+                <img src="images/build_mode.png" alt="Меню билд мода" class="wiki-image">
+                
+                <ul>
+                    <li><strong>Игровой режим</strong> - переносит вас в режим теста карты где вы можете управлять своим персонажем.</li>
+                    <li><strong>Сохранить карту</strong> - сохранение карты, если выйти без сохранения все ваши изменения карты не будут сохранены.</li>
+                    <li><strong>Заспавнить новый куб</strong> - спавн нового объекта, всегда появляется на нулевых координатах.</li>
+                    <li><strong>Изменить св-ва карты</strong> - изменить описание, или название текущей карты.</li>
+                    <li><strong>Скопировать выделенный объект</strong> - копирование выделенного объекта, куба.</li>
+                    <li><strong>Вставить скопированный объект</strong> - вставить ранее скопированный объект.</li>
+                    <li><strong>Удалить выделенный объект</strong> - просто удалить текущий объект.</li>
+                </ul>
+            </section>
+
+            <section id="additional-menu">
+                <h3>Дополнительные функции меню</h3>
+                <ul>
+                    <li>Двигать объекты с помощью мыши (По умолчанию отключено) - функция имеющая баги но позволяющая удобно перемещать объекты.</li>
+                    <li>Опубликовать или обновить данные карты - дать доступ другим игрокам присоединяться к вашей карте.</li>
+                    <li>Скорость полёта (Мин. значение - 1 Макс. значение - 25)</li>
+                </ul>
+            </section>
+
+            <section id="inventory">
+                <h2>Инвентарь</h2>
+                <ul>
+                    <li>Пистолет - оружие которое убивает</li>
+                    <li>Кубган - размещение блоков в игровом режиме после подбора</li>
+                    <li>Блок света - можно настроить цвет и яркость</li>
+                </ul>
+            </section>
+
+            <section id="text-block">
+                <h2>Гайд по блоку текста</h2>
+                <p>Блок текста - блок редактируя который можно полностью менять имеет несколько шрифтов</p>
+                
+                <div class="code-block">
+                    <h3>Жирный текст</h3>
+                    <code>&lt;b&gt; text &lt;/b&gt;</code>
+
+                    <h3>Курсив</h3>
+                    <code>&lt;i&gt; text &lt;/i&gt;</code>
+
+                    <h3>Подчёркнутый текст</h3>
+                    <code>&lt;u&gt; text &lt;/u&gt;</code>
+
+                    <h3>Зачёркнутый текст</h3>
+                    <code>&lt;s&gt; text &lt;/s&gt;</code>
+
+                    <h3>Размер текста</h3>
+                    <code>&lt;size=значение&gt; text &lt;/size&gt;</code> или <code>&lt;size=+5&gt;</code>
+
+                    <h3>Цвет текста</h3>
+                    <code>&lt;color=#код-цвета&gt; text &lt;/color&gt;</code> или <code>&lt;color=white(blue,red,purple,black,yellow,orange)&gt;</code>
+
+                    <h3>Выравнивание текста</h3>
+                    <code>&lt;alignt=left&gt;</code> (Выравнивание по левой стороне)<br>
+                    <code>&lt;alignt=center&gt;</code> (Выравнивание по центру)<br>
+                    <code>&lt;aling=right&gt;</code> (Выравнивание по правой стороне)<br>
+                    <code>&lt;align=justify&gt;</code> (Вертикальное выравнивание)
+
+                    <h3>Супер скрипт и саб-текст</h3>
+                    <code>&lt;sup&gt; text &lt;/sup&gt;</code> и <code>&lt;sub&gt; text &lt;/sub&gt;</code>
+
+                    <h3>Добавление линейного пробела</h3>
+                    <code>&lt;space=значение&gt;</code>
+
+                    <h3>Добавление выделения текста</h3>
+                    <code>&lt;mark=код-цвета&gt; text &lt;/mark&gt;</code>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
